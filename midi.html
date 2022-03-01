@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+
+<midi-player id="mainPlayer"
+  src="https://cdn.jsdelivr.net/gh/willhyper/midi@master/midi/d2yui.mid"
+  sound-font visualizer="#mainVisualizer">
+</midi-player>
+
+<midi-visualizer type="staff" id="mainVisualizer" 
+  src="https://cdn.jsdelivr.net/gh/willhyper/midi@master/midi/d2yui.mid">
+</midi-visualizer>
+
+<midi-visualizer type="piano-roll" id="mainVisualizer" 
+  src="https://cdn.jsdelivr.net/gh/willhyper/midi@master/midi/d2yui.mid">
+</midi-visualizer>
+
+
+<p>
+    <label for="midiFile">Load MIDI file:</label>
+    <input type="file" id="midiFile" name="midiFile" accept="audio/midi, audio/x-midi" />
+</p>
+    
+<p>https://cifkao.github.io/html-midi-player/</p>
+<p>https://cdn.jsdelivr.net/gh/cifkao/html-midi-player@2b12128/twinkle_twinkle.mid</p>
+</html>
